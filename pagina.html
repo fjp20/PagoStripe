@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe_Unidad 4_Negocios-E</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+ <style>
+        /* Fondo verde manzana */
+        body {
+            background-color: #a8e4a0 !important; /* Verde manzana */
+        }
+        /* Barra de navegación color café canela */
+        .navbar navbar-expand-lg navbar-dark bg-dark {
+            background-color: #d2b48c !important; /* Café canela */
+        }
+        .navbar-custom .nav-link, 
+        .navbar-custom .navbar-brand {
+            color: #fff !important;
+        }
+        .navbar-custom .nav-link:hover {
+            color: #ffd700 !important; /* Amarillo dorado para hover */
+        }
+        /* Ajustes para el footer */
+        footer {
+            background-color: #333 !important;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Bates de Beisbol</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(actual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ofertas</a>
+                </li>
+            </ul>
+            <form class="form-inline ml-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+</header>
+
+<main class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Carrusel de Imágenes -->
+            <div id="productCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#productCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#productCarousel" data-slide-to="1"></li>
+                    <li data-target="#productCarousel" data-slide-to="2"></li>
+                    <li data-target="#productCarousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/bb1.png" class="d-block w-100" alt="Imagen 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/bb2.jpg" class="d-block w-100" alt="Imagen 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/bb3.jpeg" class="d-block w-100" alt="Imagen 3">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h1 class="mb-3">2025 Marucci Code (-10) 2 5/8" USA Baseball Bat: MSBCD10USA</h1>
+            <p class="lead mb-4">El Code, que combina tecnología probada, es una gran herramienta 
+                para una amplia variedad de bateadores. Fabricado en aleación AZ75, este palo de una 
+                sola pieza tiene durabilidad y rendimiento para todas las estaciones. 
+                El diseño de pared multivariable crea un punto óptimo expandido, mientras que la perilla AV2 
+                ofrece una respuesta vibratoria menos negativa para una mejor sensación!</p>
+            <h2 id="productPrice" class="mb-3">$3,000</h2>
+            <!-- Aquí está el enlace de pago -->
+            <a href="https://buy.stripe.com/test_6oE3eRfVO3fPdbycMM" 
+            class="btn btn-primary btn-lg">Comprar</a> <!-- Aquí está el enlace de pago -->
+        </div>
+    </div>
+</main>
+
+<footer class="footer bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; Prueba de transacciones</p>
+            </div>
+            <div class="col-md-6 text-md-right">
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Política de Privacidad: La privacidad no existe</a></li>
+                    <li><a href="#" class="text-white">Términos del Servicio: No hay terminos de servicio</a></li>
+                    <li><a href="#" class="text-white">Contacto: Solo Dios</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
